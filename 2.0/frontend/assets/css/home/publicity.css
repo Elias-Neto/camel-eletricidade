@@ -1,0 +1,40 @@
+main .publicity,
+main .publicity ul li img {
+  width: 20rem;
+}
+
+main .publicity {
+  text-align: center;
+}
+
+main .publicity ul li img {
+  border-radius: 1rem;
+}
+
+@media (min-width: 425px) {
+  main .publicity,
+  main .publicity ul li img {
+    width: 25rem;
+  }
+}
+
+@media (min-width: 768px) {
+  main .publicity,
+  main .publicity ul li img {
+    width: 30rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  main .publicity,
+  main .publicity ul li img {
+    width: 32.5rem;
+  }
+}
+
+@media (min-width: 1440px) {
+  main .publicity,
+  main .publicity ul li img {
+    width: 37.5rem;
+  }
+}

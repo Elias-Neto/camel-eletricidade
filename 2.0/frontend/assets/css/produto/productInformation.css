@@ -1,0 +1,19 @@
+main #productInformation {
+  background-color: var(--white);
+  padding: 2.4rem;
+  border-radius: 0.5rem;
+  width: 90%;
+}
+
+main #productInformation summary {
+  font-size: 1.8rem;
+  font-weight: 700;
+
+  cursor: pointer;
+}
+
+main #productInformation p {
+  text-align: justify;
+
+  margin-top: 1.6rem;
+}

@@ -1,0 +1,28 @@
+main header {
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+  align-items: center;
+
+  text-align: center;
+}
+
+main header .logo {
+  width: 10rem;
+}
+
+main header h1 {
+  font-size: 3rem;
+}
+
+@media (min-width: 425px) {
+  main header {
+    width: 38.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  main header .logo {
+    width: 20rem;
+  }
+}

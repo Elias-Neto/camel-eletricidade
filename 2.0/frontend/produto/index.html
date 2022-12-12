@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Produto</title>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="../assets/css/produto/style.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <header>
+      <div class="mobile">
+        <div class="top">
+          <button
+            aria-expanded="false"
+            aria-label="Abrir menu"
+            class="openMenu"
+            onclick="menu()"
+          >
+            <img
+              src="../assets/images/svg/header/openMenu.svg"
+              alt="Ícone de abrir o menu"
+            />
+          </button>
+
+          <button
+            aria-expanded="true"
+            aria-label="Fechar menu"
+            class="closeMenu"
+            onclick="menu()"
+          >
+            <img
+              src="../assets/images/svg/header/closeMenu.svg"
+              alt="Ícone de fechar o menu"
+            />
+          </button>
+
+          <a href="../index.html">
+            <img
+              class="logo"
+              src="../assets/images/logo.png"
+              alt="Logo da Camel"
+            />
+          </a>
+
+          <details class="user">
+            <summary>
+              <img
+                src="../assets/images/svg/header/userIcon.svg"
+                alt="userMenu"
+              />
+            </summary>
+            <div class="userMenu">
+              <ul>
+                <li>
+                  <a href="../perfil/">
+                    <img
+                      src="../assets/images/svg/header/myProfile.svg"
+                      alt="Ícone da opção meu perfil"
+                    />
+                    <span>Meu Perfil</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="../carrinho/">
+                    <img
+                      src="../assets/images/svg/header/myCar.svg"
+                      alt="Ícone da opção meu carrinho"
+                    />
+                    <span>Meu Carrinho</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="../login/">
+                    <img
+                      src="../assets/images/svg/header/logout.svg"
+                      alt="Ícone da opção sair da conta"
+                    />
+                    <span>Sair da Conta</span>
+                  </a>
+                </li>
+              </ul>
+              <button><a href="../login/">Entrar</a></button>
+            </div>
+          </details>
+        </div>
+
+        <div class="searchBar">
+          <img
+            src="../assets/images/svg/header/searcherLoupe.svg"
+            alt="Lupa de pesquisa"
+          />
+          <input type="text" placeholder="Procure na Camel" />
+        </div>
+      </div>
+
+      <div class="desktop">
+        <div class="top">
+          <a href="../index.html">
+            <img
+              class="logo"
+              src="../assets/images/logo.png"
+              alt="Logo da Camel"
+            />
+          </a>
+
+          <div class="searchBar">
+            <img
+              src="../assets/images/svg/header/searcherLoupe.svg"
+              alt="Lupa de pesquisa"
+            />
+            <input type="text" placeholder="Procure na Camel" />
+          </div>
+
+          <details class="user">
+            <summary>
+              <img
+                src="../assets/images/svg/header/userIcon.svg"
+                alt="userMenu"
+              />
+            </summary>
+            <div class="userMenu">
+              <ul>
+                <li>
+                  <a href="../perfil/">
+                    <img
+                      src="../assets/images/svg/header/myProfile.svg"
+                      alt="Ícone da opção meu perfil"
+                    />
+                    <span>Meu Perfil</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="../carrinho/">
+                    <img
+                      src="../assets/images/svg/header//myCar.svg"
+                      alt="Ícone da opção meu carrinho"
+                    />
+                    <span>Meu Carrinho</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="../login/">
+                    <img
+                      src="../assets/images/svg/header/logout.svg"
+                      alt="Ícone da opção sair da conta"
+                    />
+                    <span>Sair da Conta</span>
+                  </a>
+                </li>
+              </ul>
+              <button><a href="../login/">Entrar</a></button>
+            </div>
+          </details>
+        </div>
+
+        <div class="bottom">
+          <button
+            aria-expanded="false"
+            aria-label="Abrir menu"
+            class="openMenu"
+            onclick="menu()"
+          >
+            <img
+              src="../assets/images/svg/header/openMenu.svg"
+              alt="Ícone de abrir o menu"
+            />
+            <span>Todos</span>
+          </button>
+
+          <ul>
+            <li><a href="../categoria/">Fios e Cabos</a></li>
+            <li><a href="../categoria/">Iluminação</a></li>
+            <li><a href="../categoria/">Segurança</a></li>
+            <li><a href="../categoria/">Tomadas e Interruptores</a></li>
+            <li><a href="../categoria/">Tubos e Conexões</a></li>
+            <li><a href="../categoria/">Ferramentas e Ferragens</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="drawer">
+        <div class="categories">
+          <ul>
+            <li><a href="../categoria/">Fios e Cabos</a></li>
+            <li><a href="../categoria/">Iluminação</a></li>
+            <li><a href="../categoria/">Segurança</a></li>
+            <li><a href="../categoria/">Tomadas e Interruptores</a></li>
+            <li><a href="../categoria/">Tubos e Conexões</a></li>
+            <li><a href="../categoria/">Ferramentas e Ferragens</a></li>
+          </ul>
+        </div>
+        <button
+          aria-expanded="true"
+          aria-label="Fechar menu"
+          class="closeMenu"
+          onclick="menu()"
+        >
+          <img
+            src="../assets/images/svg/header/closeMenu.svg"
+            alt="Ícone de fechar o menu"
+          />
+        </button>
+      </div>
+    </header>
+
+    <div class="overlay" onclick="menu()"></div>
+
+    <main>
+      <section class="browsingHistory">
+        <a href="../categoria/">Iluminação</a>
+        <span>></span>
+        <a href="../categoria/">Arandelas</a>
+      </section>
+
+      <section class="product">
+        <header>
+          <h1>Arandela X</h1>
+          <hr />
+        </header>
+
+        <section class="slides">
+          <div class="swiper mySwiper2">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="../assets/images/produto/img.jpg" />
+              </div>
+              <div class="swiper-slide">
+                <img src="../assets/images/produto/img1.jpg" />
+              </div>
+              <div class="swiper-slide">
+                <img src="../assets/images/produto/img2.jpg" />
+              </div>
+              <div class="swiper-slide">
+                <img src="../assets/images/produto/img3.jpg" />
+              </div>
+              <div class="swiper-slide">
+                <img src="../assets/images/produto/img4.jpg" />
+              </div>
+            </div>
+          </div>
+          <div thumbsSlider="" class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="../assets/images/produto/img.jpg" />
+              </div>
+              <div class="swiper-slide">
+                <img src="../assets/images/produto/img1.jpg" />
+              </div>
+              <div class="swiper-slide">
+                <img src="../assets/images/produto/img2.jpg" />
+              </div>
+              <div class="swiper-slide">
+                <img src="../assets/images/produto/img3.jpg" />
+              </div>
+              <div class="swiper-slide">
+                <img src="../assets/images/produto/img4.jpg" />
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="description">
+          <header>
+            <h1>Arandela X</h1>
+            <hr class="first" />
+          </header>
+          <p>
+            Esta Arandela cria um lindo efeito de 10 fachos de luz, extremamente
+            resistente a sol, chuva e maresia. Produzida em alumínio não
+            enferruja nunca. Ideal para ser usada em áreas externas e internas,
+            fácil instalação.
+          </p>
+          <a href="#productInformation">Mais informações</a>
+          <hr class="second" />
+        </section>
+
+        <section class="end">
+          <div class="price promotion">
+            <span class="productPrice">R$ 100</span>
+            <span class="productPromotionPrice">R$ 74,99</span>
+          </div>
+
+          <div class="addToCar">
+            <button>Adicionar ao carrinho</button>
+
+            <div class="productAdded">Produto adicionado no carrinho 👍</div>
+
+            <div class="amount">
+              <span>Quantidade</span>
+              <select>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+              </select>
+            </div>
+          </div>
+        </section>
+      </section>
+
+      <section class="relatedProducts swiper">
+        <header>
+          <h2>Produtos Relacionados</h2>
+        </header>
+
+        <ul class="swiper-wrapper">
+          <li class="swiper-slide">
+            <a href="">
+              <div class="imageContainer">
+                <img
+                  src="../assets/images/produto/similar.png"
+                  alt="Imagem do produto"
+                />
+              </div>
+              <span class="productName">Arandela Y</span>
+              <div class="price promotion">
+                <span class="productPrice">R$ 80,00</span>
+                <span class="productPromotionPrice">R$ 65,99</span>
+              </div>
+            </a>
+          </li>
+
+          <li class="swiper-slide">
+            <a href="">
+              <div class="imageContainer">
+                <img
+                  src="../assets/images/produto/similar6.png"
+                  alt="Imagem do produto"
+                />
+              </div>
+              <span class="productName">Lampada Led Halopim</span>
+              <div class="price">
+                <span class="productPrice">R$ 20,00</span>
+                <span class="productPromotionPrice"></span>
+              </div>
+            </a>
+          </li>
+
+          <li class="swiper-slide">
+            <a href="">
+              <div class="imageContainer">
+                <img
+                  src="../assets/images/produto/similar1.png"
+                  alt="Imagem do produto"
+                />
+              </div>
+              <span class="productName">Arandela Z</span>
+              <div class="price promotion">
+                <span class="productPrice">R$ 100,00</span>
+                <span class="productPromotionPrice">R$ 65,99</span>
+              </div>
+            </a>
+          </li>
+
+          <li class="swiper-slide">
+            <a href="">
+              <div class="imageContainer">
+                <img
+                  src="../assets/images/produto/similar2.png"
+                  alt="Imagem do produto"
+                />
+              </div>
+              <span class="productName">Arandela D</span>
+              <div class="price promotion">
+                <span class="productPrice">R$ 90,00</span>
+                <span class="productPromotionPrice">R$ 70,99</span>
+              </div>
+            </a>
+          </li>
+
+          <li class="swiper-slide">
+            <a href="">
+              <div class="imageContainer">
+                <img
+                  src="../assets/images/produto/similar3.png"
+                  alt="Imagem do produto"
+                />
+              </div>
+              <span class="productName">Arandela F</span>
+              <div class="price promotion">
+                <span class="productPrice">R$ 120,00</span>
+                <span class="productPromotionPrice">R$ 100,87</span>
+              </div>
+            </a>
+          </li>
+
+          <li class="swiper-slide">
+            <a href="">
+              <div class="imageContainer">
+                <img
+                  src="../assets/images/produto/similar6.png"
+                  alt="Imagem do produto"
+                />
+              </div>
+              <span class="productName">Lampada Led Halopim</span>
+              <div class="price">
+                <span class="productPrice">R$ 20,00</span>
+                <span class="productPromotionPrice"></span>
+              </div>
+            </a>
+          </li>
+
+          <li class="swiper-slide">
+            <a href="">
+              <div class="imageContainer">
+                <img
+                  src="../assets/images/produto/similar4.png"
+                  alt="Imagem do produto"
+                />
+              </div>
+              <span class="productName">Arandela I</span>
+              <div class="price promotion">
+                <span class="productPrice">R$ 85,00</span>
+                <span class="productPromotionPrice">R$ 65,99</span>
+              </div>
+            </a>
+          </li>
+
+          <li class="swiper-slide">
+            <a href="">
+              <div class="imageContainer">
+                <img
+                  src="../assets/images/produto/similar1.png"
+                  alt="Imagem do produto"
+                />
+              </div>
+              <span class="productName">Arandela Z</span>
+              <div class="price promotion">
+                <span class="productPrice">R$ 100,00</span>
+                <span class="productPromotionPrice">R$ 65,99</span>
+              </div>
+            </a>
+          </li>
+
+          <li class="swiper-slide">
+            <a href="">
+              <div class="imageContainer">
+                <img
+                  src="../assets/images/produto/similar5.png"
+                  alt="Imagem do produto"
+                />
+              </div>
+              <span class="productName">Arandela P</span>
+              <div class="price promotion">
+                <span class="productPrice">R$ 78,00</span>
+                <span class="productPromotionPrice">R$ 63,99</span>
+              </div>
+            </a>
+          </li>
+
+          <li class="swiper-slide">
+            <a href="">
+              <div class="imageContainer">
+                <img
+                  src="../assets/images/produto/similar2.png"
+                  alt="Imagem do produto"
+                />
+              </div>
+              <span class="productName">Arandela D</span>
+              <div class="price promotion">
+                <span class="productPrice">R$ 90,00</span>
+                <span class="productPromotionPrice">R$ 70,99</span>
+              </div>
+            </a>
+          </li>
+        </ul>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </section>
+
+      <details id="productInformation">
+        <summary>Informações do Produto</summary>
+        <p>
+          Por ser um produto original STARLUMEN a pintura utilizada é
+          eletrostática que confere extrema proteção e durabilidade sem
+          descascar ou desbotar, não arrisque comprando réplicas. Um toque de
+          beleza que valoriza sua casa.
+        </p>
+      </details>
+
+      <details id="datasheet">
+        <summary>Ficha Técnica</summary>
+        <table>
+          <tbody>
+            <tr>
+              <th>Cor</th>
+              <td>Marrom</td>
+            </tr>
+            <tr>
+              <th>Material</th>
+              <td>100% Alumínio e vidro</td>
+            </tr>
+            <tr>
+              <th>Soquete</th>
+              <td>g9 halopin</td>
+            </tr>
+            <tr>
+              <th>Tamanho</th>
+              <td>altura 12,5 cm x largura 10 cm x profundidade 10 cm</td>
+            </tr>
+            <tr>
+              <th>Itens Inclusos</th>
+              <td>
+                Três Arandelas MARROM ST678; &#; Três Máscaras Efeito; Dez
+                Fachos MARROM ST910; Parafusos para instalação; NÃO ACOMPANHA
+                LÂMPADA.
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </details>
+    </main>
+
+    <footer>
+      <div class="top">
+        <img src="../assets/images/logo.png" alt="Logo da Camel" />
+        <p>
+          ©2022 - CAMEL ELETRICIDADE. <br /><br />
+          Todos os direitos reservados.
+        </p>
+      </div>
+      <ul class="bottom">
+        <li>
+          <a
+            href="https://www.google.com/maps/place/Camel+Eletricidade/@-8.2528998,-35.9733131,18z/data=!4m10!1m2!2m1!1sRodovia+PE-95,319+%7C+GALP%C3%83O+D+%7C+Luiz+Gonzaga%0D%0ACaruaru+-+P!3m6!1s0x7a98bcf8a832f91:0x8c8a11189ca74d7f!8m2!3d-8.252883!4d-35.972592!15sCjlSb2RvdmlhIFBFLTk1LDMxOSB8IEdBTFDDg08gRCB8IEx1aXogR29uemFnYQ0KQ2FydWFydSAtIFBaMyIxcm9kb3ZpYSBwZSA5NTMxOSBnYWxww6NvIGQgbHVpeiBnb256YWdhIGNhcnVhcnUgcJIBF2VsZWN0cmljYWxfc3VwcGx5X3N0b3JlmgEjQ2haRFNVaE5NRzluUzBWSlEwRm5TVU54T0ZwaFFWVm5FQUXgAQA!16s%2Fg%2F1tjyttk1?hl=pt-BR"
+            target="_blank"
+            ><img
+              src="../assets/images/svg/footer/maps.svg"
+              alt="Ícone para acessar localização"
+          /></a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/cameleletricidade/" target="_blank"
+            ><img
+              src="../assets/images/svg/footer/instagram.svg"
+              alt="Ícone para acessar instagram"
+          /></a>
+        </li>
+        <li>
+          <a href="https://www.facebook.com/cameleletricidade/" target="_blank"
+            ><img
+              src="../assets/images/svg/footer/facebook.svg"
+              alt="Ícone para acessar facebook"
+          /></a>
+        </li>
+        <li>
+          <a
+            href="https://api.whatsapp.com/send/?phone=5581991738533&text&type=phone_number&app_absent=0"
+            target="_blank"
+            ><img
+              src="../assets/images/svg/footer/whatsapp.svg"
+              alt="Ícone para acessar whatsapp"
+          /></a>
+        </li>
+      </ul>
+    </footer>
+
+    <script src="../assets/js/layout/showMenu.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="../assets/js/produto/swiper.js"></script>
+    <script src="../assets/js/produto/addToCar.js"></script>
+  </body>
+</html>

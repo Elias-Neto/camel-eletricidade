@@ -1,0 +1,43 @@
+main .brands {
+  background-color: var(--white);
+  width: 100%;
+  padding-block: 2.4rem;
+
+  text-align: center;
+}
+
+main .brands h2 {
+  font-size: 1.8rem;
+  margin-bottom: 2.4rem;
+}
+
+main .brands .swiper-button-prev,
+main .brands .swiper-button-next {
+  color: var(--orange);
+}
+
+main .brands ul li a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+main .brands ul li a img {
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+}
+
+main .brands ul li a span {
+  color: var(--black);
+  text-transform: uppercase;
+}
+
+@media (min-width: 1024px) {
+  main .brands {
+    width: 75%;
+    padding: 2.4rem;
+    border-radius: 1rem;
+  }
+}

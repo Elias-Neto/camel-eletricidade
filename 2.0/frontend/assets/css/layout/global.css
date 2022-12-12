@@ -1,0 +1,45 @@
+@import url(./header.css);
+@import url(./footer.css);
+@import url(./main.css);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+
+  --body-bg: hsl(180, 8%, 92%);
+  --white: hsl(0, 0%, 95%);
+  --black: hsl(0, 0%, 5%);
+  --gray: hsl(229, 19%, 22%);
+  --orange: hsl(33, 96%, 48%);
+  --input-description: hsl(229, 8%, 61%);
+  --input-bg: hsl(229, 20%, 11%);
+}
+
+body {
+  background-color: var(--body-bg);
+
+  font-size: 1.6rem;
+  font-family: "Inter", sans-serif;
+
+  scrollbar-gutter: stable;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--white);
+}
+
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}

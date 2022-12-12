@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAMEL</title>
+
+    <link rel="stylesheet" href="pagina-de-produto.css">
+    <link rel="shortcut icon" href="imgs/favicon.ico" type="image/x-icon">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+    <!-- Splide JS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.7/dist/css/themes/splide-skyblue.min.css">
+
+</head>
+<body>
+    <!-- Header -->
+    <nav class="desktop">
+      <div class="top">
+        <a onclick="closeMenu()" href="../pagina-home/pagina-home.html">
+          <img class="logo" src="./imgs/logo.png" alt="Logo da camel" />
+        </a>
+
+        <div class="search">
+          <span
+            ><img src="./imgs/search.png" alt="icone de uma lupa"
+          /></span>
+          <input type="text" placeholder="Procure na Camel" />
+        </div>
+
+        <a
+          onclick="colseMenu()"
+          href="../pagina-de-carrinho/pagina-de-carrinho.html"
+        >
+          <img
+            class="shopping-cart"
+            src="./imgs/carrinho-de-compras.png"
+            alt="Imagem de carrinho de compras"
+          />
+        </a>
+      </div>
+
+      <div class="down">
+        <ul>
+          <li class="all">
+            <button
+              aria-expanded="false"
+              aria-label="Abrir menu"
+              onclick="openMenu()"
+              class="open-menu"
+            >
+              <svg
+                width="40"
+                height="40"
+                viewBox="0 0 40 40"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M35 20H15"
+                  stroke="#F2F2F2"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M35 12H15"
+                  stroke="#F2F2F2"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M27 28L15 28"
+                  stroke="#F2F2F2"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </button>
+
+            <button
+              aria-expanded="true"
+              aria-label="Fechar menu"
+              onclick="closeMenu()"
+              class="close-menu"
+            >
+              <svg
+                width="40"
+                height="40"
+                viewBox="0 0 40 40"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M30 10L10 30M10 10L30 30"
+                  stroke="#F2F2F2"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </button>
+
+            Todos
+          </li>
+          <li class="emphasis_categories">
+            <a href="#">Categoria 1</a>
+            <a href="#">Categoria 2</a>
+            <a href="#">Categoria 3</a>
+            <a href="#">Categoria 4</a>
+            <a href="#">Categoria 5</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <nav class="mobile">
+      <div class="top">
+        <button
+          aria-expanded="false"
+          aria-label="Abrir menu"
+          onclick="openMenu()"
+          class="open-menu"
+        >
+          <svg
+            width="40"
+            height="40"
+            viewBox="0 0 40 40"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M35 20H15"
+              stroke="#F2F2F2"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M35 12H15"
+              stroke="#F2F2F2"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M27 28L15 28"
+              stroke="#F2F2F2"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </button>
+
+        <button
+          aria-expanded="true"
+          aria-label="Fechar menu"
+          onclick="closeMenu()"
+          class="close-menu"
+        >
+          <svg
+            width="40"
+            height="40"
+            viewBox="0 0 40 40"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M30 10L10 30M10 10L30 30"
+              stroke="#F2F2F2"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </button>
+
+        <a onclick="closeMenu()" href="../pagina-home/pagina-home.html">
+          <img class="logo" src="./imgs/logo.png" alt="Logo da camel" />
+        </a>
+
+        <a
+          onclick="colseMenu()"
+          href="../pagina-de-carrinho/pagina-de-carrinho.html"
+        >
+          <img
+            class="shopping-cart"
+            src="./imgs/carrinho-de-compras.png"
+            alt="Imagem de carrinho de compras"
+          />
+        </a>
+      </div>
+
+      <div class="search">
+        <span><img src="./imgs/search.png" alt="icone de uma lupa" /></span>
+        <input type="text" placeholder="Procure na Camel" />
+      </div>
+    </nav>
+
+    <div class="menu">
+      <ul>
+        <li><a href="#">Categoria 1</a></li>
+        <li><a href="#">Categoria 2</a></li>
+        <li><a href="#">Categoria 3</a></li>
+        <li><a href="#">Categoria 4</a></li>
+        <li><a href="#">Categoria 5</a></li>
+        <li><a href="#">Categoria 6</a></li>
+        <li><a href="#">Categoria 7</a></li>
+        <li><a href="#">Categoria 8</a></li>
+        <li><a href="#">Categoria 9</a></li>
+        <li><a href="#">Categoria 10</a></li>
+      </ul>
+    </div>
+
+    <main>
+        <div class="main_container">
+            <!-- navegação -->
+            <nav id="navegacao">
+                <span>
+                  <a href="../pagina-home/pagina-home.html">Página Inicial > </a>
+                </span>
+                <span>
+                  <a href="">Categoria > </a> 
+                </span>
+                <span> 
+                  <a href="">Sub-Categoria > </a>
+                </span>
+                <span> 
+                  <a href="">Arandela</a> 
+                </span>
+            </nav>
+            <!-- detalhes do produto -->
+            <section class="container_detalhes">
+                <div class="tit_prod_p">
+                    <h1 class="tit_prod">ARANDELA</h1>
+                    <hr>
+                </div>
+                <div class="imagens">
+                  <section id="main-carousel" class="splide" aria-label="My Awesome Gallery">
+                    <div class="splide__track">
+                      <ul class="splide__list">
+                        <li class="splide__slide">
+                          <img src="imgs/prod1.jpg" alt="">
+                        </li>
+                        <li class="splide__slide">
+                          <img src="imgs/prod2.jpg" alt="">
+                        </li>
+                        <li class="splide__slide">
+                          <img src="imgs/prod3.jpg" alt="">
+                        </li>
+                        <li class="splide__slide">
+                          <img src="imgs/prod4.jpg" alt="">
+                        </li>
+                        <li class="splide__slide">
+                          <img src="imgs/prod5.jpg" alt="">
+                        </li>
+                      </ul>
+                    </div>
+                  </section>
+                  
+                  <ul id="thumbnails" class="thumbnails">
+                    <li class="thumbnail">
+                      <img src="imgs/prod1.jpg" alt="">
+                    </li>
+                    <li class="thumbnail">
+                      <img src="imgs/prod2.jpg" alt="">
+                    </li>
+                    <li class="thumbnail">
+                      <img src="imgs/prod3.jpg" alt="">
+                    </li>
+                    <li class="thumbnail">
+                      <img src="imgs/prod4.jpg" alt="">
+                    </li>
+                    <li class="thumbnail">
+                      <img src="imgs/prod5.jpg" alt="">
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="detalhes">
+                    <h1 class="tit_prod_g tit_prod">ARANDELA</h1>
+                    <hr>
+                    <p class="detalhes_texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate ipsa rerum quasi fugit quia, molestias facilis dolore quibusdam a. Corporis est voluptatem hic reiciendis repudiandae vero asperiores autem accusamus id.</p>
+                    <p class="mais_info"><a href="#flush-headingOne">Mais Informações</a></p>
+                    <hr>
+                    <div class="opcoes">
+                        <p class="preco">R$ 99,99</p>
+                        <div>
+                          <p class="quant" >Quantidade:  
+                            <input type="number" class="dig" min="1" onchange="selecionar()">
+                            <select class="drop" onchange="digitar()">
+                                <option value="1" selected>1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10+">10+</option>
+                            </select>
+                            </p>
+                            <button><a href="../pagina-de-carrinho/pagina-de-carrinho.html">Adicionar ao carrinho</a></button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Produtos relacionados -->
+            <section class="rel">
+                <h2>Produtos relacionados</h2>
+                <div class="sugest">
+                    <div class="container_sug">
+                        <input type="checkbox" name="" class="check">
+                        <img class="img_prod" src="imgs/rel1.jpg" alt="">
+                        <p class="nome_sug">Arandela B</p>
+                        <p class="val_sug">R$ 99,99</p>
+                    </div>
+                    <div>
+                        <img class="ico" src="imgs/soma.png" alt="">
+                    </div>
+                    <div class="container_sug">
+                        <input type="checkbox" name="" class="check">
+                        <img class="img_prod" src="imgs/rel2.jpg" alt="">
+                        <p class="nome_sug">Abajur</p>
+                        <p class="val_sug">R$ 99,99</p>
+                    </div>
+                    <div>
+                        <img class="ico" src="imgs/soma.png" alt="">
+                    </div>
+                    <div class="container_sug">
+                        <input type="checkbox" name="" class="check">
+                        <img class="img_prod" src="imgs/rel3.png" alt="">
+                        <p class="nome_sug">Lâmpada A</p>
+                        <p class="val_sug">R$ 99,99</p>
+                    </div>
+                    <div>
+                        <img class="ico igual_g" src="imgs/igual.png" alt="">
+                    </div>
+                    <div>
+                        <p id="total_g">R$ 199,99</p>
+                    </div>
+                </div>
+                <button class="adc_g"><a href="../pagina-de-carrinho/pagina-de-carrinho.html">Adicionar ao carrinho</a></button>
+
+                <!-- exibido em telas pequenas -->
+
+                <div id="pequeno">
+                    <div style="display:flex; align-items: center;">
+                        <img class="igual_p" src="imgs/igual.png" alt="">
+                        <p id="total_p">R$ 199,99</p>
+                    </div>
+                    <button class="adc_p"><a href="../pagina-de-carrinho/pagina-de-carrinho.html">Adicionar ao carrinho</a></button> 
+                </div>
+            </section>
+
+            <!-- Mais informações -->
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-headingOne">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                      Informações do produto
+                    </button>
+                  </h2>
+                  <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores explicabo quos corporis quae beatae harum dolore facere eos tenetur quidem et, minus quaerat saepe consequuntur impedit perferendis, doloremque quo amet? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur optio dolorem doloremque omnis libero eius, amet voluptatibus, suscipit quis tempore ullam vero ipsam nostrum soluta aliquam. Nemo sint eligendi cupiditate?</div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Ficha técnica
+                      </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                      <div class="accordion-body">
+                        <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                      </div>
+                    </div>
+                  </div>
+            
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="top">
+          <img
+            src="imgs/logo.png"
+            alt="logo"
+          />
+          <p>
+            ©2022 - CAMEL ELETRICIDADE. <br /><br />
+            Todos os direitos reservados.
+          </p>
+        </div>
+        <div class="down">
+  
+          <a href="https://www.facebook.com/cameleletricidade/" target="_blank"><i class="fa-brands fa-facebook fa-2xl fa-pull-left"></i></a>
+  
+          <a href="https://www.instagram.com/cameleletricidade/" target="_blank"><i class="fa-brands fa-instagram-square fa-2xl fa-pull-left"></i></a>
+  
+          <a href="https://www.google.com/maps/place/Camel+Eletricidade+Caruaru/@-8.252883,-35.972592,15z/data=!4m5!3m4!1s0x0:0x8c8a11189ca74d7f!8m2!3d-8.252883!4d-35.972592" target="_blank"><i class="fa-solid fa-location-dot fa-2xl fa-pull-left"></i></a>
+  
+          <a href="https://wa.me/5511987654321" target="_blank"><i class="fa-brands fa-whatsapp-square fa-2xl fa-pull-left --fa-fade-opacity-1"></i></a>
+        </div>
+      </footer>
+
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    
+    <!-- Footer -->
+    <script src="https://kit.fontawesome.com/0054bfb566.js" crossorigin="anonymous"></script>
+
+    <!-- Splide -->
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.7/dist/js/splide.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.7/dist/js/utils/splide-utils.cjs.js"></script>
+
+    <script src="pagina-de-produto.js"></script>
+</body>
+</html>

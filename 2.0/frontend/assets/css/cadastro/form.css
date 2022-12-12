@@ -1,0 +1,92 @@
+main form {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+}
+
+main form h2 {
+  font-size: 2rem;
+  text-align: left;
+}
+
+main form fieldset {
+  border: none;
+  margin: 3rem 0 6rem 0;
+
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+main form fieldset .inputWrapper {
+  background-color: var(--input-bg);
+  padding: 1.6rem;
+  border-radius: 0.5rem;
+
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+main form fieldset .inputWrapper input {
+  background: none;
+  border: none;
+  outline: none;
+
+  color: var(--white);
+  font-size: 1.6rem;
+
+  width: 100%;
+}
+
+main fieldset .inputWrapper input::placeholder {
+  color: var(--input-description);
+  font-size: 1.6rem;
+}
+
+main form fieldset .inputWrapper .subWrapper {
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+main form fieldset .inputWrapper .passwordVisibilityIcon {
+  fill: var(--orange);
+  transition: opacity 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+}
+
+main form .register {
+  display: flex;
+
+  transition: filter 0.3s ease 0s;
+}
+
+main form .register a {
+  background-color: var(--orange);
+  padding-block: 1.4rem;
+  border-radius: 0.5rem;
+  width: 100%;
+
+  color: var(--white);
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1.6rem;
+
+  transition: filter 0.3s ease 0s;
+}
+
+main form .register:hover {
+  filter: brightness(1.15);
+}
+
+@media (min-width: 425px) {
+  main form {
+    width: 38.5rem;
+  }
+}

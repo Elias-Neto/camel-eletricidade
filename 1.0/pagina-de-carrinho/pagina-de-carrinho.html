@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Página de Carrinho</title>
+
+    <link rel="stylesheet" href="pagina-de-carrinho.css" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="shortcut icon"
+      href="./imgs/favicon.ico"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <!-- HEADER DA PÁGINA  -->
+    <nav class="desktop">
+      <div class="top">
+        <a onclick="closeMenu()" href="../pagina-home/pagina-home.html">
+          <img class="logo" src="./imgs/Logo.png" alt="Logo da camel" />
+        </a>
+
+        <div class="search">
+          <span
+            ><img src="./imgs/search.png" alt="icone de uma lupa"
+          /></span>
+          <input type="text" placeholder="Procure na Camel" />
+        </div>
+
+        <a
+          onclick="colseMenu()"
+          href="../pagina-de-carrinho/pagina-de-carrinho.html"
+        >
+          <img
+            class="shopping-cart"
+            src="./imgs/carrinho-de-compras.png"
+            alt="Imagem de carrinho de compras"
+          />
+        </a>
+      </div>
+
+      <div class="down">
+        <ul>
+          <li class="all">
+            <button
+              aria-expanded="false"
+              aria-label="Abrir menu"
+              onclick="openMenu()"
+              class="open-menu"
+            >
+              <svg
+                width="40"
+                height="40"
+                viewBox="0 0 40 40"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M35 20H15"
+                  stroke="#F2F2F2"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M35 12H15"
+                  stroke="#F2F2F2"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M27 28L15 28"
+                  stroke="#F2F2F2"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </button>
+
+            <button
+              aria-expanded="true"
+              aria-label="Fechar menu"
+              onclick="closeMenu()"
+              class="close-menu"
+            >
+              <svg
+                width="40"
+                height="40"
+                viewBox="0 0 40 40"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M30 10L10 30M10 10L30 30"
+                  stroke="#F2F2F2"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </button>
+
+            Todos
+          </li>
+          <li class="emphasis_categories">
+            <a href="#">Categoria 1</a>
+            <a href="#">Categoria 2</a>
+            <a href="#">Categoria 3</a>
+            <a href="#">Categoria 4</a>
+            <a href="#">Categoria 5</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <nav class="mobile">
+      <div class="top">
+        <button
+          aria-expanded="false"
+          aria-label="Abrir menu"
+          onclick="openMenu()"
+          class="open-menu"
+        >
+          <svg
+            width="40"
+            height="40"
+            viewBox="0 0 40 40"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M35 20H15"
+              stroke="#F2F2F2"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M35 12H15"
+              stroke="#F2F2F2"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M27 28L15 28"
+              stroke="#F2F2F2"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </button>
+
+        <button
+          aria-expanded="true"
+          aria-label="Fechar menu"
+          onclick="closeMenu()"
+          class="close-menu"
+        >
+          <svg
+            width="40"
+            height="40"
+            viewBox="0 0 40 40"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M30 10L10 30M10 10L30 30"
+              stroke="#F2F2F2"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </button>
+
+        <a onclick="closeMenu()" href="../pagina-home/pagina-home.html">
+          <img class="logo" src="./imgs/Logo.png" alt="Logo da camel" />
+        </a>
+
+        <a
+          onclick="colseMenu()"
+          href="../pagina-de-carrinho/pagina-de-carrinho.html"
+        >
+          <img
+            class="shopping-cart"
+            src="./imgs/carrinho-de-compras.png"
+            alt="Imagem de carrinho de compras"
+          />
+        </a>
+      </div>
+
+      <div class="search">
+        <span><img src="./imgs/search.png" alt="icone de uma lupa" /></span>
+        <input type="text" placeholder="Procure na Camel" />
+      </div>
+    </nav>
+
+    <div class="menu">
+      <ul>
+        <li><a href="#">Categoria 1</a></li>
+        <li><a href="#">Categoria 2</a></li>
+        <li><a href="#">Categoria 3</a></li>
+        <li><a href="#">Categoria 4</a></li>
+        <li><a href="#">Categoria 5</a></li>
+        <li><a href="#">Categoria 6</a></li>
+        <li><a href="#">Categoria 7</a></li>
+        <li><a href="#">Categoria 8</a></li>
+        <li><a href="#">Categoria 9</a></li>
+        <li><a href="#">Categoria 10</a></li>
+      </ul>
+    </div>
+
+    <!-- PÁGINA DE CARRINHO -->
+    <main>
+      <section class="historic">
+        <p>
+          Página Inicial > Categoria 1 > Sub-categoria 1 > Produto A > Carrinho
+        </p>
+      </section>
+
+      <section class="remove_all">
+        <button>Excluir Todos</button>
+      </section>
+
+      <section class="product_list">
+        <ul>
+          <li class="product_list_item">
+            <div class="checkbox_and_img">
+              <input type="checkbox" />
+              <div class="img"></div>
+            </div>
+
+            <div class="name_price_select_remove">
+              <p class="product_name">NOME DO PRODUTO</p>
+
+              <div class="price_select_remove">
+                <div class="price_and_select">
+                  <p class="product_price">R$&nbsp99,00</p>
+                  <select>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                  </select>
+                </div>
+
+                <button class="remove">Excluir</button>
+              </div>
+            </div>
+          </li>
+
+          <li class="product_list_item">
+            <div class="checkbox_and_img">
+              <input type="checkbox" />
+              <div class="img"></div>
+            </div>
+
+            <div class="name_price_select_remove">
+              <p class="product_name">NOME DO PRODUTO</p>
+
+              <div class="price_select_remove">
+                <div class="price_and_select">
+                  <p class="product_price">R$&nbsp99,00</p>
+                  <select>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                  </select>
+                </div>
+
+                <button class="remove">Excluir</button>
+              </div>
+            </div>
+          </li>
+
+          <li class="product_list_item">
+            <div class="checkbox_and_img">
+              <input type="checkbox" />
+              <div class="img"></div>
+            </div>
+
+            <div class="name_price_select_remove">
+              <p class="product_name">NOME DO PRODUTO</p>
+
+              <div class="price_select_remove">
+                <div class="price_and_select">
+                  <p class="product_price">R$&nbsp99,00</p>
+                  <select>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                  </select>
+                </div>
+
+                <button class="remove">Excluir</button>
+              </div>
+            </div>
+          </li>
+
+          <li class="product_list_item">
+            <div class="checkbox_and_img">
+              <input type="checkbox" />
+              <div class="img"></div>
+            </div>
+
+            <div class="name_price_select_remove">
+              <p class="product_name">NOME DO PRODUTO</p>
+
+              <div class="price_select_remove">
+                <div class="price_and_select">
+                  <p class="product_price">R$&nbsp99,00</p>
+                  <select>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                  </select>
+                </div>
+
+                <button class="remove">Excluir</button>
+              </div>
+            </div>
+          </li>
+
+          <li class="product_list_item">
+            <div class="checkbox_and_img">
+              <input type="checkbox" />
+              <div class="img"></div>
+            </div>
+
+            <div class="name_price_select_remove">
+              <p class="product_name">NOME DO PRODUTO</p>
+
+              <div class="price_select_remove">
+                <div class="price_and_select">
+                  <p class="product_price">R$&nbsp99,00</p>
+                  <select>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                  </select>
+                </div>
+
+                <button class="remove">Excluir</button>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <section class="end">
+        <hr />
+        <div class="totalPrice_and_budgetButton">
+          <div class="totalPrice">
+            <p>Total: <span>R$ 297,00</span></p>
+          </div>
+          <button><a href="../pagina-orcamento/orçamento.html">Fazer Orçamento</a></button>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER DA PÁGINA -->
+    <footer>
+      <div class="top">
+        <img
+          src="./imgs/Logo.png"
+          alt="logo"
+        />
+        <p>
+          ©2022 - CAMEL ELETRICIDADE. <br /><br />
+          Todos os direitos reservados.
+        </p>
+      </div>
+      <div class="down">
+
+        <a href="https://www.facebook.com/cameleletricidade/" target="_blank"><i class="fa-brands fa-facebook fa-2xl fa-pull-left"></i></a>
+
+        <a href="https://www.instagram.com/cameleletricidade/" target="_blank"><i class="fa-brands fa-instagram-square fa-2xl fa-pull-left"></i></a>
+
+        <a href="https://www.google.com/maps/place/Camel+Eletricidade+Caruaru/@-8.252883,-35.972592,15z/data=!4m5!3m4!1s0x0:0x8c8a11189ca74d7f!8m2!3d-8.252883!4d-35.972592" target="_blank"><i class="fa-solid fa-location-dot fa-2xl fa-pull-left"></i></a>
+
+        <a href="https://wa.me/5511987654321" target="_blank"><i class="fa-brands fa-whatsapp-square fa-2xl fa-pull-left --fa-fade-opacity-1"></i></a>
+      </div>
+    </footer>
+
+    <script src="./pagina-de-carrinho.js"></script>
+    <script src="https://kit.fontawesome.com/0054bfb566.js" crossorigin="anonymous"></script>
+  </body>
+</html>
+

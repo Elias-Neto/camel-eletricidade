@@ -1,0 +1,74 @@
+/* === GERAL ================================*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+
+  --bg-primary-color: hsl(180, 8%, 92%);
+  --white-color: hsl(0, 0%, 95%);
+  --black-color: hsl(0, 0%, 5%);
+  --gray-color: hsl(229, 19%, 22%);
+  --orange-color: hsl(39, 96%, 48%);
+
+  --main-header-height: 13rem;
+}
+
+body {
+  background-color: var(--bg-primary-color);
+
+  font-size: 1.6rem;
+  font-family: 'Inter', sans-serif;
+}
+
+/* === FOOTER ================================*/
+footer {
+  width: 100%;
+  background-color: var(--gray-color);
+  padding: 1rem;
+}
+
+footer .top {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 2rem;
+
+  margin-top: 1rem;
+}
+
+footer .top img {
+  width: 12rem;
+}
+
+footer .top p {
+  font-size: 1rem;
+  line-height: 1.2rem;
+  color: var(--white-color);
+}
+
+footer .down {
+  display: flex;
+  align-items: center;
+  justify-content: ;
+  gap: 2rem;
+
+  margin-block: 1.5rem;
+}
+
+/* === RESPONSIVIDADE FOOTER================================*/
+@media (min-width: 700px) {
+  footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding-inline: 8rem;
+
+    position: fixed;
+    bottom: 0;
+  }
+}

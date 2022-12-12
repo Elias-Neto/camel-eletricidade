@@ -1,0 +1,30 @@
+main #datasheet {
+  background-color: var(--white);
+  padding: 2.4rem;
+  border-radius: 0.5rem;
+  width: 90%;
+}
+
+main #datasheet summary {
+  font-size: 1.8rem;
+  font-weight: 700;
+
+  cursor: pointer;
+}
+
+main #datasheet table {
+  text-align: justify;
+
+  border-collapse: collapse;
+  margin-top: 2.4rem;
+}
+
+main #datasheet table tbody td,
+main #datasheet table tbody th {
+  /* border: 0.1rem solid var(--gray); */
+  padding: 1rem;
+}
+
+main #datasheet table tbody tr:nth-child(even) {
+  background-color: #ddd;
+}

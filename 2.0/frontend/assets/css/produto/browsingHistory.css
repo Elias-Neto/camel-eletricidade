@@ -1,0 +1,13 @@
+main .browsingHistory {
+  background: none;
+  padding-block: 0 !important;
+}
+
+main .browsingHistory a {
+  color: var(--gray);
+  font-weight: 700;
+}
+
+main .browsingHistory a:hover {
+  text-decoration: underline;
+}

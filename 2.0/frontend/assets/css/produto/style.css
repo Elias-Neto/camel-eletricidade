@@ -1,0 +1,23 @@
+@import url(../layout/global.css);
+@import url(./browsingHistory.css);
+@import url(./product.css);
+@import url(./relatedProducts.css);
+@import url(./productInformation.css);
+@import url(./datasheet.css);
+
+html {
+  scroll-behavior: smooth;
+}
+
+main section {
+  font-size: 1.4rem;
+
+  width: 100%;
+  padding-inline: 1rem !important;
+  padding-block: 2.4rem !important;
+  background-color: var(--white);
+}
+
+main img {
+  width: 10rem;
+}

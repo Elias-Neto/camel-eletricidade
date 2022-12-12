@@ -1,0 +1,37 @@
+footer {
+  background-color: var(--gray);
+  width: 100%;
+  padding: 2rem;
+
+  bottom: 0;
+
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+  color: var(--white);
+}
+
+footer .top,
+footer .bottom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3.2rem;
+}
+
+footer .top img {
+  width: 10rem;
+}
+
+footer .top p {
+  font-size: 1rem;
+}
+
+@media (min-width: 768px) {
+  footer {
+    flex-direction: row;
+    gap: 6rem;
+    justify-content: center;
+  }
+}

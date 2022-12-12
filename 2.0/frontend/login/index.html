@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Login</title>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="../assets/css/login/style.css" />
+
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <div class="App">
+      <main>
+        <header>
+          <img
+            class="logo"
+            src="../assets/images/logo.png"
+            alt="Logo da Camel"
+          />
+
+          <h1>Faça seu login na plataforma</h1>
+        </header>
+
+        <hr />
+
+        <form action="">
+          <fieldset>
+            <div class="inputWrapper email">
+              <svg
+                class="inputIcon"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g clip-path="url(#clip0_712_1382)">
+                  <path
+                    d="M18.5 0.999847H5.5C4.0418 1.00144 2.64377 1.58141 1.61267 2.61251C0.581561 3.64362 0.00158817 5.04164 0 6.49985L0 17.4998C0.00158817 18.958 0.581561 20.3561 1.61267 21.3872C2.64377 22.4183 4.0418 22.9983 5.5 22.9998H18.5C19.9582 22.9983 21.3562 22.4183 22.3873 21.3872C23.4184 20.3561 23.9984 18.958 24 17.4998V6.49985C23.9984 5.04164 23.4184 3.64362 22.3873 2.61251C21.3562 1.58141 19.9582 1.00144 18.5 0.999847ZM18.5 3.99985C19.1065 4.00187 19.6911 4.2264 20.143 4.63085L13.643 11.1308C13.2015 11.5525 12.6145 11.7878 12.004 11.7878C11.3935 11.7878 10.8065 11.5525 10.365 11.1308L3.865 4.63085C4.31485 4.22822 4.8963 4.00382 5.5 3.99985H18.5ZM18.5 19.9998H5.5C4.83696 19.9998 4.20107 19.7365 3.73223 19.2676C3.26339 18.7988 3 18.1629 3 17.4998V8.01685L8.239 13.2558C8.73276 13.7498 9.319 14.1417 9.96424 14.409C10.6095 14.6764 11.3011 14.814 11.9995 14.814C12.6979 14.814 13.3895 14.6764 14.0348 14.409C14.68 14.1417 15.2662 13.7498 15.76 13.2558L21 8.01685V17.4998C21 18.1629 20.7366 18.7988 20.2678 19.2676C19.7989 19.7365 19.163 19.9998 18.5 19.9998Z"
+                    fill="#2D3142"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="clip0_712_1382">
+                    <rect width="24" height="24" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Seu e-mail"
+                autocomplete="off"
+              />
+            </div>
+
+            <div class="inputWrapper password">
+              <svg
+                class="inputIcon"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g clip-path="url(#clip0_712_1386)">
+                  <path
+                    d="M19.0443 8.50955V7.04435C19.0443 3.15386 15.8904 0 11.9999 0C8.10945 0 4.95564 3.15386 4.95564 7.0443V8.5095C3.10481 9.45402 1.93891 11.3556 1.93665 13.4335V18.4652C1.93999 21.5206 4.41604 23.9967 7.47145 24H16.5284C19.5838 23.9966 22.0599 21.5206 22.0632 18.4652V13.4335C22.061 11.3556 20.8951 9.45402 19.0443 8.50955ZM11.9999 3.01899C14.2231 3.01899 16.0252 4.82119 16.0252 7.0443V7.89868H7.97463V7.0443C7.97463 4.82119 9.77683 3.01899 11.9999 3.01899ZM19.0443 18.4652C19.0443 19.8546 17.9179 20.981 16.5285 20.981H7.4715C6.08205 20.981 4.95569 19.8546 4.95569 18.4652V13.4335C4.95569 12.0441 6.08205 10.9177 7.4715 10.9177H16.5285C17.9179 10.9177 19.0443 12.0441 19.0443 13.4335V18.4652Z"
+                    fill="#2D3142"
+                  />
+                  <path
+                    d="M11.4968 13.9367H12.5031C13.3368 13.9367 14.0126 14.6125 14.0126 15.4462C14.0126 16.2798 13.3368 16.9556 12.5031 16.9556H11.4968C10.6631 16.9556 9.9873 16.2798 9.9873 15.4462C9.9873 14.6125 10.6631 13.9367 11.4968 13.9367Z"
+                    fill="#2D3142"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="clip0_712_1386">
+                    <rect width="24" height="24" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+              <div class="subWrapper">
+                <input
+                  type="password"
+                  name="password"
+                  id="password"
+                  placeholder="Sua senha"
+                  autocomplete="off"
+                />
+                <svg
+                  class="passwordVisibilityIcon"
+                  stroke="currentColor"
+                  fill="currentColor"
+                  stroke-width="0"
+                  viewBox="0 0 24 24"
+                  height="18"
+                  width="18"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+
+            <a class="forgotPassword" href="./esqueci_senha/"
+              >Esqueci minha senha</a
+            >
+          </fieldset>
+
+          <button class="login"><a href="../index.html ">Entrar</a></button>
+
+          <div class="register">
+            Não tem uma conta? <a href="../cadastro/">Registre-se</a>
+          </div>
+
+          <div class="otherLoginOptions">
+            <span>Ou entre com</span>
+
+            <a href="../index.html">
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g clip-path="url(#clip0_712_1371)">
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M14.0351 5.45655C13.0026 4.4718 11.6246 3.93533 10.199 3.95738C7.59012 3.95738 5.37444 5.71742 4.58442 8.08742C4.16554 9.32938 4.16554 10.6743 4.58442 11.9162H4.58809C5.38177 14.2826 7.59378 16.0426 10.2026 16.0426C11.5493 16.0426 12.7055 15.6982 13.6015 15.0898V15.0873C14.6561 14.3892 15.3763 13.2905 15.6004 12.0485H10.199V8.19772H19.6313C19.7489 8.86647 19.804 9.54992 19.804 10.2297C19.804 13.2712 18.717 15.8427 16.8257 17.5844L16.8277 17.5859C15.1705 19.1145 12.896 20 10.199 20C6.41796 20 2.96031 17.8688 1.26272 14.492C-0.155609 11.6664 -0.155606 8.33733 1.26273 5.51169C2.96032 2.1312 6.41796 2.50159e-06 10.199 2.50159e-06C12.6829 -0.0293931 15.0823 0.903916 16.8901 2.60151L14.0351 5.45655Z"
+                    fill="#F28705"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="clip0_712_1371">
+                    <rect
+                      width="20"
+                      height="20"
+                      fill="white"
+                      transform="translate(-0.000976562)"
+                    />
+                  </clipPath>
+                </defs>
+              </svg>
+            </a>
+
+            <a href="../index.html">
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g clip-path="url(#clip0_712_1373)">
+                  <path
+                    d="M19.999 10C19.999 4.47715 15.5219 0 9.99902 0C4.47617 0 -0.000976562 4.47715 -0.000976562 10C-0.000976562 14.9912 3.65586 19.1283 8.43652 19.8785V12.8906H5.89746V10H8.43652V7.79688C8.43652 5.29063 9.92949 3.90625 12.2137 3.90625C13.3074 3.90625 14.4521 4.10156 14.4521 4.10156V6.5625H13.1912C11.949 6.5625 11.5615 7.3334 11.5615 8.125V10H14.335L13.8916 12.8906H11.5615V19.8785C16.3422 19.1283 19.999 14.9912 19.999 10Z"
+                    fill="#F28705"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="clip0_712_1373">
+                    <rect
+                      width="20"
+                      height="20"
+                      fill="white"
+                      transform="translate(-0.000976562)"
+                    />
+                  </clipPath>
+                </defs>
+              </svg>
+            </a>
+          </div>
+        </form>
+      </main>
+    </div>
+
+    <script src="../assets/js/login/focusInput.js"></script>
+    <script src="../assets/js/login/showPassword.js"></script>
+    <script src="../assets/js/login/mouseOver.js"></script>
+  </body>
+</html>

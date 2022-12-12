@@ -1,0 +1,23 @@
+main .swiper {
+  width: 100%;
+}
+
+main .swiper ul li {
+  text-align: center;
+}
+
+main .swiper ul li.swiper-slide-active {
+  font-weight: 700;
+  color: var(--orange);
+}
+
+main .swiper .swiper-button-prev,
+main .swiper .swiper-button-next {
+  color: var(--orange);
+}
+
+@media (min-width: 425px) {
+  main .swiper {
+    width: 42.5rem;
+  }
+}

@@ -1,0 +1,59 @@
+main .relatedProducts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3.2rem;
+
+  text-align: center;
+}
+
+main .relatedProducts header h2 {
+  font-size: 1.8rem;
+}
+
+main .relatedProducts ul li a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+main .relatedProducts ul li a .imageContainer {
+  background-color: var(--gray);
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+
+main .relatedProducts ul li a .imageContainer img {
+  width: 8rem;
+  height: 8rem;
+}
+
+main .relatedProducts ul li a span {
+  color: var(--black);
+}
+
+main .relatedProducts ul li a .productName {
+  font-size: 1.4rem;
+  width: 10rem;
+}
+
+main .relatedProducts ul li a .price {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  font-weight: 600;
+}
+
+main .relatedProducts ul li a .price.promotion .productPrice {
+  text-decoration: line-through;
+}
+
+main .relatedProducts ul li a .price .productPromotionPrice {
+  color: var(--orange);
+}
+
+main .relatedProducts .swiper-button-prev,
+main .relatedProducts .swiper-button-next {
+  color: var(--orange);
+}

@@ -1,0 +1,238 @@
+main .product {
+  font-size: 1.4rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3.2rem;
+
+  width: 100%;
+  padding-inline: 1rem;
+  padding-block: 2.4rem;
+  background-color: var(--white);
+}
+
+main .product section {
+  display: inherit !important;
+  width: inherit !important;
+  padding: 0 !important;
+}
+
+main .product header {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+  align-items: center;
+}
+
+main .product header h1 {
+  font-size: 2.2rem;
+}
+
+main .product hr {
+  width: 85%;
+  height: 0.3rem;
+  background-color: var(--gray);
+}
+
+main .product .slides {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+main .product .slides .mySwiper2 {
+  width: 100%;
+}
+
+main .product .slides .mySwiper2 .swiper-wrapper {
+  text-align: center;
+}
+
+main .product .slides .mySwiper2 .swiper-slide img {
+  width: 20rem;
+}
+
+main .product .slides .mySwiper .swiper-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+main .product .slides .mySwiper .swiper-slide {
+  opacity: 0.4;
+
+  width: fit-content !important;
+
+  cursor: pointer;
+}
+
+main .product .slides .mySwiper .swiper-slide-thumb-active {
+  opacity: 1;
+}
+
+main .product .slides .mySwiper .swiper-slide img {
+  width: 5rem;
+}
+
+main .product .description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+main .product .description header {
+  display: none;
+}
+
+main .product .description p {
+  text-align: justify;
+}
+
+main .product .description a {
+  color: var(--orange);
+  font-weight: 600;
+  text-decoration: underline;
+  font-size: 1.2rem;
+
+  align-self: flex-start;
+  width: fit-content;
+}
+
+main .product .description hr.second {
+  margin-top: 2.2rem;
+}
+
+main .product .end {
+  display: flex;
+  justify-content: space-around;
+}
+
+main .product .end .price {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+main .product .end .price.promotion .productPrice {
+  text-decoration: line-through;
+}
+
+main .product .end .price .productPromotionPrice {
+  color: var(--orange);
+}
+
+main .product .end .addToCar {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+}
+
+main .product .end .addToCar button {
+  background-color: var(--orange);
+  padding: 1rem;
+  border-radius: 1rem;
+
+  color: var(--white);
+  font-size: 1.2rem;
+  font-weight: 700;
+
+  transition: filter 0.3s ease 0s;
+}
+
+main .product .end .addToCar button:hover {
+  filter: brightness(1.15);
+}
+
+main .product .end .addToCar .productAdded {
+  background-color: rgb(52, 168, 52);
+  padding: 1rem;
+  border-radius: 0.5rem;
+
+  font-weight: 700;
+  color: var(--white);
+
+  position: fixed;
+  right: -100%;
+  bottom: 4rem;
+
+  z-index: 998;
+
+  transition: 0.8s ease;
+}
+
+main .product .end .addToCar .productAdded.show {
+  right: 4rem;
+}
+
+main .product .end .addToCar .amount select {
+  border-radius: 0.5rem;
+  padding: 0.2rem;
+}
+
+@media (min-width: 768px) {
+  main .product header {
+    display: none;
+  }
+
+  main .product .description header {
+    display: inherit;
+  }
+
+  main .product {
+    display: grid;
+    grid-template-areas:
+      "A B"
+      "A B"
+      "A C";
+
+    padding-inline: 2.4rem !important;
+  }
+
+  main .product .slides {
+    grid-area: A;
+  }
+
+  main .product .description {
+    grid-area: B;
+  }
+
+  main .product .end {
+    grid-area: C;
+    display: flex !important;
+  }
+
+  main .product hr {
+    width: 100%;
+  }
+
+  main .product .description hr.first {
+    margin-bottom: 2.2rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  main {
+    width: 96rem;
+    margin: auto;
+  }
+
+  main .product,
+  main .relatedProducts {
+    border-radius: 0.5rem;
+  }
+
+  main #productInformation,
+  main #datasheet {
+    width: 96rem !important;
+  }
+}

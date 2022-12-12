@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./assets/css/home/style.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <header>
+      <div class="mobile">
+        <div class="top">
+          <button
+            aria-expanded="false"
+            aria-label="Abrir menu"
+            class="openMenu"
+            onclick="menu()"
+          >
+            <img
+              src="./assets/images/svg/header/openMenu.svg"
+              alt="Ícone de abrir o menu"
+            />
+          </button>
+
+          <button
+            aria-expanded="true"
+            aria-label="Fechar menu"
+            class="closeMenu"
+            onclick="menu()"
+          >
+            <img
+              src="./assets/images/svg/header/closeMenu.svg"
+              alt="Ícone de fechar o menu"
+            />
+          </button>
+
+          <a href="">
+            <img
+              class="logo"
+              src="./assets/images/logo.png"
+              alt="Logo da Camel"
+            />
+          </a>
+
+          <details class="user">
+            <summary>
+              <img
+                src="./assets/images/svg/header/userIcon.svg"
+                alt="userMenu"
+              />
+            </summary>
+            <div class="userMenu">
+              <ul>
+                <li>
+                  <a href="./perfil/">
+                    <img
+                      src="./assets/images/svg/header/myProfile.svg"
+                      alt="Ícone da opção meu perfil"
+                    />
+                    <span>Meu Perfil</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="./carrinho/">
+                    <img
+                      src="./assets/images/svg/header/myCar.svg"
+                      alt="Ícone da opção meu carrinho"
+                    />
+                    <span>Meu Carrinho</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="./login/">
+                    <img
+                      src="./assets/images/svg/header/logout.svg"
+                      alt="Ícone da opção sair da conta"
+                    />
+                    <span>Sair da Conta</span>
+                  </a>
+                </li>
+              </ul>
+              <button><a href="./login/">Entrar</a></button>
+            </div>
+          </details>
+        </div>
+
+        <div class="searchBar">
+          <img
+            src="./assets/images/svg/header/searcherLoupe.svg"
+            alt="Lupa de pesquisa"
+          />
+          <input type="text" placeholder="Procure na Camel" />
+        </div>
+      </div>
+
+      <div class="desktop">
+        <div class="top">
+          <a href="">
+            <img
+              class="logo"
+              src="./assets/images/logo.png"
+              alt="Logo da Camel"
+            />
+          </a>
+
+          <div class="searchBar">
+            <img
+              src="./assets/images/svg/header/searcherLoupe.svg"
+              alt="Lupa de pesquisa"
+            />
+            <input type="text" placeholder="Procure na Camel" />
+          </div>
+
+          <details class="user">
+            <summary>
+              <img
+                src="./assets/images/svg/header/userIcon.svg"
+                alt="userMenu"
+              />
+            </summary>
+            <div class="userMenu">
+              <ul>
+                <li>
+                  <a href="./perfil/">
+                    <img
+                      src="./assets/images/svg/header/myProfile.svg"
+                      alt="Ícone da opção meu perfil"
+                    />
+                    <span>Meu Perfil</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="./carrinho/">
+                    <img
+                      src="./assets/images/svg/header//myCar.svg"
+                      alt="Ícone da opção meu carrinho"
+                    />
+                    <span>Meu Carrinho</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="./login/">
+                    <img
+                      src="./assets/images/svg/header/logout.svg"
+                      alt="Ícone da opção sair da conta"
+                    />
+                    <span>Sair da Conta</span>
+                  </a>
+                </li>
+              </ul>
+              <button><a href="./login/">Entrar</a></button>
+            </div>
+          </details>
+        </div>
+
+        <div class="bottom">
+          <button
+            aria-expanded="false"
+            aria-label="Abrir menu"
+            class="openMenu"
+            onclick="menu()"
+          >
+            <img
+              src="./assets/images/svg/header/openMenu.svg"
+              alt="Ícone de abrir o menu"
+            />
+            <span>Todos</span>
+          </button>
+
+          <ul>
+            <li><a href="./categoria/">Fios e Cabos</a></li>
+            <li><a href="./categoria/">Iluminação</a></li>
+            <li><a href="./categoria/">Segurança</a></li>
+            <li><a href="./categoria/">Tomadas e Interruptores</a></li>
+            <li><a href="./categoria/">Tubos e Conexões</a></li>
+            <li><a href="./categoria/">Ferramentas e Ferragens</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="drawer">
+        <div class="categories">
+          <ul>
+            <li><a href="./categoria/">Fios e Cabos</a></li>
+            <li><a href="./categoria/">Iluminação</a></li>
+            <li><a href="./categoria/">Segurança</a></li>
+            <li><a href="./categoria/">Tomadas e Interruptores</a></li>
+            <li><a href="./categoria/">Tubos e Conexões</a></li>
+            <li><a href="./categoria/">Ferramentas e Ferragens</a></li>
+          </ul>
+        </div>
+        <button
+          aria-expanded="true"
+          aria-label="Fechar menu"
+          class="closeMenu"
+          onclick="menu()"
+        >
+          <img
+            src="./assets/images/svg/header/closeMenu.svg"
+            alt="Ícone de fechar o menu"
+          />
+        </button>
+      </div>
+    </header>
+
+    <div class="overlay" onclick="menu()"></div>
+
+    <main>
+      <section class="publicity swiper">
+        <ul class="swiper-wrapper">
+          <li class="swiper-slide">
+            <img
+              src="./assets/images/home/publicity/publi1.jpg"
+              alt="Imagem publicitária"
+            />
+          </li>
+          <li class="swiper-slide">
+            <img
+              src="./assets/images/home/publicity/publi2.jpg"
+              alt="Imagem publicitária"
+            />
+          </li>
+          <li class="swiper-slide">
+            <img
+              src="./assets/images/home/publicity/publi3.jpg"
+              alt="Imagem publicitária"
+            />
+          </li>
+          <li class="swiper-slide">
+            <img
+              src="./assets/images/home/publicity/publi4.jpg"
+              alt="Imagem publicitária"
+            />
+          </li>
+        </ul>
+      </section>
+
+      <section class="categories swiper">
+        <ul class="swiper-wrapper">
+          <li class="swiper-slide">
+            <a href="./categoria/">
+              <div class="imageContainer">
+                <img
+                  src="./assets/images/home/categories/fiosCabos.png"
+                  alt="Imagem de fios e cabos"
+                />
+              </div>
+              <span>Fios e Cabos</span>
+            </a>
+          </li>
+          <li class="swiper-slide">
+            <a href="./categoria/">
+              <div class="imageContainer">
+                <img
+                  src="./assets/images/home/categories/iluminacao.png"
+                  alt="Imagem de uma lâmpada"
+                />
+              </div>
+              <span>Iluminação</span>
+            </a>
+          </li>
+          <li class="swiper-slide">
+            <a href="./categoria/">
+              <div class="imageContainer">
+                <img
+                  src="./assets/images/home/categories/seguranca.png"
+                  alt="Imagem de um disnjuntor"
+                />
+              </div>
+              <span>Segurança</span>
+            </a>
+          </li>
+          <li class="swiper-slide">
+            <a href="./categoria/">
+              <div class="imageContainer">
+                <img
+                  src="./assets/images/home/categories/tomadasInterruptores.png"
+                  alt="Imagem de uma tomada e um interuptor"
+                />
+              </div>
+              <span>Tomadas e Interruptores</span>
+            </a>
+          </li>
+          <li class="swiper-slide">
+            <a href="./categoria/">
+              <div class="imageContainer">
+                <img
+                  src="./assets/images/home/categories/tubosConexoes.png"
+                  alt="Imagem de um tubo elétrico"
+                />
+              </div>
+              <span>Tubos e Conexões</span>
+            </a>
+          </li>
+          <li class="swiper-slide">
+            <a href="./categoria/">
+              <div class="imageContainer">
+                <img
+                  src="./assets/images/home/categories/ferramentasFerragens.png"
+                  alt="Imagem de um alicate"
+                />
+              </div>
+              <span>Ferramentas e Ferragens</span>
+            </a>
+          </li>
+          <li class="swiper-slide">
+            <a href="./categoria/">
+              <div class="imageContainer">
+                <img
+                  src="./assets/images/home/categories/fiosCabos.png"
+                  alt="Imagem de fios e cabos"
+                />
+              </div>
+              <span>Fios e Cabos</span>
+            </a>
+          </li>
+          <li class="swiper-slide">
+            <a href="./categoria/">
+              <div class="imageContainer">
+                <img
+                  src="./assets/images/home/categories/iluminacao.png"
+                  alt="Imagem de uma lâmpada"
+                />
+              </div>
+              <span>Iluminação</span>
+            </a>
+          </li>
+          <li class="swiper-slide">
+            <a href="./categoria/">
+              <div class="imageContainer">
+                <img
+                  src="./assets/images/home/categories/seguranca.png"
+                  alt="Imagem de um disnjuntor"
+                />
+              </div>
+              <span>Segurança</span>
+            </a>
+          </li>
+          <li class="swiper-slide">
+            <a href="./categoria/">
+              <div class="imageContainer">
+                <img
+                  src="./assets/images/home/categories/tomadasInterruptores.png"
+                  alt="Imagem de uma tomada e um interuptor"
+                />
+              </div>
+              <span>Tomadas e Interruptores</span>
+            </a>
+          </li>
+          <li class="swiper-slide">
+            <a href="./categoria/">
+              <div class="imageContainer">
+                <img
+                  src="./assets/images/home/categories/tubosConexoes.png"
+                  alt="Imagem de um tubo elétrico"
+                />
+              </div>
+              <span>Tubos e Conexões</span>
+            </a>
+          </li>
+          <li class="swiper-slide">
+            <a href="./categoria/">
+              <div class="imageContainer">
+                <img
+                  src="./assets/images/home/categories/ferramentasFerragens.png"
+                  alt="Imagem de um alicate"
+                />
+              </div>
+              <span>Ferramentas e Ferragens</span>
+            </a>
+          </li>
+        </ul>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-scrollbar"></div>
+      </section>
+
+      <section class="emphasisProducts">
+        <h2>Produtos em Destaque</h2>
+        <ul>
+          <li>
+            <a href="./produto/">
+              <div class="imageContainer">
+                <img
+                  src="./assets/images/home/products/lampada.png"
+                  alt="Imagem de uma lampada"
+                />
+              </div>
+              <span class="productName">Lâmpada Fluorescente</span>
+              <div class="price">
+                <span class="productPrice">R$ 100</span>
+                <span class="promotionProductPrice">R$ 80</span>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="./produto/">
+              <div class="imageContainer">
+                <img
+                  src="./assets/images/home/products/lampada.png"
+                  alt="Imagem de uma lampada"
+                />
+              </div>
+              <span class="productName">Lâmpada Fluorescente</span>
+              <div class="price">
+                <span class="productPrice">R$ 100</span>
+                <span class="promotionProductPrice">R$ 80</span>
+              </div>
+            </a>
+          </li>
+          <li class="r768">
+            <a href="./produto/">
+              <div class="imageContainer">
+                <img
+                  src="./assets/images/home/products/lampada.png"
+                  alt="Imagem de uma lampada"
+                />
+              </div>
+              <span class="productName">Lâmpada Fluorescente</span>
+              <div class="price">
+                <span class="productPrice">R$ 100</span>
+                <span class="promotionProductPrice">R$ 80</span>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="./produto/">
+              <div class="imageContainer">
+                <img
+                  src="./assets/images/home/products/disjuntor.png"
+                  alt="Imagem de um disjuntor"
+                />
+              </div>
+              <span class="productName">Disjuntor DIN</span>
+              <div class="price">
+                <span class="productPrice">R$ 200</span>
+                <span class="promotionProductPrice">R$ 120</span>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="./produto/">
+              <div class="imageContainer">
+                <img
+                  src="./assets/images/home/products/disjuntor.png"
+                  alt="Imagem de um disjuntor"
+                />
+              </div>
+              <span class="productName">Disjuntor DIN</span>
+              <div class="price">
+                <span class="productPrice">R$ 200</span>
+                <span class="promotionProductPrice">R$ 120</span>
+              </div>
+            </a>
+          </li>
+          <li class="r768">
+            <a href="./produto/">
+              <div class="imageContainer">
+                <img
+                  src="./assets/images/home/products/disjuntor.png"
+                  alt="Imagem de um disjuntor"
+                />
+              </div>
+              <span class="productName">Disjuntor DIN</span>
+              <div class="price">
+                <span class="productPrice">R$ 200</span>
+                <span class="promotionProductPrice">R$ 120</span>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="./produto/">
+              <div class="imageContainer">
+                <img
+                  src="./assets/images/home/products/lampada.png"
+                  alt="Imagem de uma lampada"
+                />
+              </div>
+              <span class="productName">Lâmpada Fluorescente</span>
+              <div class="price">
+                <span class="productPrice">R$ 100</span>
+                <span class="promotionProductPrice">R$ 80</span>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="./produto/">
+              <div class="imageContainer">
+                <img
+                  src="./assets/images/home/products/lampada.png"
+                  alt="Imagem de uma lampada"
+                />
+              </div>
+              <span class="productName">Lâmpada Fluorescente</span>
+              <div class="price">
+                <span class="productPrice">R$ 100</span>
+                <span class="promotionProductPrice">R$ 80</span>
+              </div>
+            </a>
+          </li>
+          <li class="r768">
+            <a href="./produto/">
+              <div class="imageContainer">
+                <img
+                  src="./assets/images/home/products/lampada.png"
+                  alt="Imagem de uma lampada"
+                />
+              </div>
+              <span class="productName">Lâmpada Fluorescente</span>
+              <div class="price">
+                <span class="productPrice">R$ 100</span>
+                <span class="promotionProductPrice">R$ 80</span>
+              </div>
+            </a>
+          </li>
+          <li class="joker">
+            <a href="./produto/">
+              <div class="imageContainer">
+                <img
+                  src="./assets/images/home/products/disjuntor.png"
+                  alt="Imagem de um disjuntor"
+                />
+              </div>
+              <span class="productName">Disjuntor DIN</span>
+              <div class="price">
+                <span class="productPrice">R$ 200</span>
+                <span class="promotionProductPrice">R$ 120</span>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </section>
+
+      <section class="brands swiper">
+        <h2>Compre por Marca</h2>
+        <ul class="swiper-wrapper">
+          <li class="swiper-slide">
+            <a href="./categoria/">
+              <img
+                src="./assets/images/home/brands//weg.png"
+                alt="Logo da weg"
+              />
+              <span>WEG</span>
+            </a>
+          </li>
+          <li class="swiper-slide">
+            <a href="./categoria/">
+              <img
+                src="./assets/images/home/brands/steck.png"
+                alt="Logo da STECK"
+              />
+              <span>STECK</span>
+            </a>
+          </li>
+          <li class="swiper-slide">
+            <a href="./categoria/">
+              <img
+                src="./assets/images/home/brands/schneider.png"
+                alt="Logo da schneider"
+              />
+              <span>SCHNEIDER</span>
+            </a>
+          </li>
+          <li class="swiper-slide">
+            <a href="./categoria/">
+              <img
+                src="./assets/images/home/brands/saveenergy.png"
+                alt="Logo da saveenergy"
+              />
+              <span>SAVEENERGY</span>
+            </a>
+          </li>
+          <li class="swiper-slide">
+            <a href="./categoria/">
+              <img
+                src="./assets/images/home/brands/legrand.jpg"
+                alt="Logo da legrand"
+              />
+              <span>LEGRAND</span>
+            </a>
+          </li>
+          <li class="swiper-slide">
+            <a href="./categoria/">
+              <img
+                src="./assets/images/home/brands/gmhtrade.jpg"
+                alt="Logo da gmhtrade"
+              />
+              <span>GMHTRADE</span>
+            </a>
+          </li>
+          <li class="swiper-slide">
+            <a href="./categoria/">
+              <img
+                src="./assets/images/home/brands//weg.png"
+                alt="Logo da weg"
+              />
+              <span>WEG</span>
+            </a>
+          </li>
+          <li class="swiper-slide">
+            <a href="./categoria/">
+              <img
+                src="./assets/images/home/brands/steck.png"
+                alt="Logo da STECK"
+              />
+              <span>STECK</span>
+            </a>
+          </li>
+          <li class="swiper-slide">
+            <a href="./categoria/">
+              <img
+                src="./assets/images/home/brands/schneider.png"
+                alt="Logo da schneider"
+              />
+              <span>SCHNEIDER</span>
+            </a>
+          </li>
+          <li class="swiper-slide">
+            <a href="./categoria/">
+              <img
+                src="./assets/images/home/brands/saveenergy.png"
+                alt="Logo da saveenergy"
+              />
+              <span>SAVEENERGY</span>
+            </a>
+          </li>
+          <li class="swiper-slide">
+            <a href="./categoria/">
+              <img
+                src="./assets/images/home/brands/legrand.jpg"
+                alt="Logo da legrand"
+              />
+              <span>LEGRAND</span>
+            </a>
+          </li>
+          <li class="swiper-slide">
+            <a href="./categoria/">
+              <img
+                src="./assets/images/home/brands/gmhtrade.jpg"
+                alt="Logo da gmhtrade"
+              />
+              <span>GMHTRADE</span>
+            </a>
+          </li>
+        </ul>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-scrollbar"></div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="top">
+        <img src="./assets/images/logo.png" alt="Logo da Camel" />
+        <p>
+          ©2022 - CAMEL ELETRICIDADE. <br /><br />
+          Todos os direitos reservados.
+        </p>
+      </div>
+      <ul class="bottom">
+        <li>
+          <a
+            href="https://www.google.com/maps/place/Camel+Eletricidade/@-8.2528998,-35.9733131,18z/data=!4m10!1m2!2m1!1sRodovia+PE-95,319+%7C+GALP%C3%83O+D+%7C+Luiz+Gonzaga%0D%0ACaruaru+-+P!3m6!1s0x7a98bcf8a832f91:0x8c8a11189ca74d7f!8m2!3d-8.252883!4d-35.972592!15sCjlSb2RvdmlhIFBFLTk1LDMxOSB8IEdBTFDDg08gRCB8IEx1aXogR29uemFnYQ0KQ2FydWFydSAtIFBaMyIxcm9kb3ZpYSBwZSA5NTMxOSBnYWxww6NvIGQgbHVpeiBnb256YWdhIGNhcnVhcnUgcJIBF2VsZWN0cmljYWxfc3VwcGx5X3N0b3JlmgEjQ2haRFNVaE5NRzluUzBWSlEwRm5TVU54T0ZwaFFWVm5FQUXgAQA!16s%2Fg%2F1tjyttk1?hl=pt-BR"
+            target="_blank"
+            ><img
+              src="./assets/images/svg/footer/maps.svg"
+              alt="Ícone para acessar localização"
+          /></a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/cameleletricidade/" target="_blank"
+            ><img
+              src="./assets/images/svg/footer/instagram.svg"
+              alt="Ícone para acessar instagram"
+          /></a>
+        </li>
+        <li>
+          <a href="https://www.facebook.com/cameleletricidade/" target="_blank"
+            ><img
+              src="./assets/images/svg/footer/facebook.svg"
+              alt="Ícone para acessar facebook"
+          /></a>
+        </li>
+        <li>
+          <a
+            href="https://api.whatsapp.com/send/?phone=5581991738533&text&type=phone_number&app_absent=0"
+            target="_blank"
+            ><img
+              src="./assets/images/svg/footer/whatsapp.svg"
+              alt="Ícone para acessar whatsapp"
+          /></a>
+        </li>
+      </ul>
+    </footer>
+
+    <script src="./assets/js/layout/showMenu.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="./assets/js/home/swiper.js"></script>
+  </body>
+</html>

@@ -1,0 +1,224 @@
+@import url(../layout/global.css);
+
+main {
+  background-color: var(--white);
+  padding: 0;
+  margin-block: 7rem;
+  padding-block: 3.2rem;
+}
+
+main header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.2rem;
+}
+
+main header h1 {
+  font-size: 2.8rem;
+}
+
+main header .removeAll {
+  color: var(--gray);
+  font-size: 1.6rem;
+}
+
+main header .removeAll:hover {
+  color: var(--orange);
+  text-decoration: underline;
+}
+
+main ul {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+
+  width: 100%;
+}
+
+main ul li {
+  padding: 1.6rem;
+
+  display: flex;
+  gap: 1.6rem;
+}
+
+main ul li:not(:last-child) {
+  border-bottom: 0.3rem solid #ddd;
+}
+
+main ul li input {
+  width: 1.6rem;
+  height: 1.6rem;
+  align-self: center;
+}
+
+main ul li .wrapper {
+  display: flex;
+  gap: 1.2rem;
+
+  width: 100%;
+}
+
+main ul li .wrapper .imageContainer {
+  background-color: var(--gray);
+  padding: 1rem;
+  border-radius: 0.5rem;
+  display: block;
+  height: fit-content;
+  align-self: center;
+}
+
+main ul li .wrapper .imageContainer img {
+  width: 8rem;
+  height: 8rem;
+}
+
+main ul li .wrapper .wrapper1 {
+  display: flex;
+  flex-direction: column;
+  gap: 1.8rem;
+
+  width: 100%;
+}
+
+main ul li .wrapper .wrapper1 header {
+  gap: 0.5rem;
+}
+
+main ul li .wrapper .wrapper1 header .name {
+  color: var(--black);
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+main ul li .wrapper .wrapper1 header .brand {
+  font-size: 1.4rem;
+}
+
+main ul li .wrapper .wrapper1 header .available {
+  font-size: 1.2rem;
+  color: #007600;
+}
+
+main ul li .wrapper .wrapper1 .price {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  font-weight: 600;
+  font-size: 1.6rem;
+}
+
+main ul li .wrapper .wrapper1 .price.promotion .productPrice {
+  text-decoration: line-through;
+}
+
+main ul li .wrapper .wrapper1 .price .productPromotionPrice {
+  color: var(--orange);
+}
+
+main ul li .wrapper .wrapper1 .buttons {
+  display: flex;
+  justify-content: flex-start;
+  gap: 1.2rem;
+
+  margin-top: 0.6rem;
+}
+
+main ul li .wrapper .wrapper1 .buttons select {
+  appearance: none;
+  -webkit-appearance: none;
+
+  padding: 0.4rem 2.4rem 0.4rem 0.8rem;
+  border-radius: 0.5rem;
+  border: 0.1rem solid #9c98a6;
+
+  background-image: url("../../images/svg/carrinho/slect.svg");
+  background-repeat: no-repeat;
+  background-position: right 0rem top 50%;
+}
+
+main ul li .wrapper .wrapper1 .buttons span {
+  color: #ddd;
+}
+
+main ul li .wrapper .wrapper1 .buttons button {
+  color: var(--orange);
+  font-size: 1.2rem;
+}
+
+main ul li .wrapper .wrapper1 .buttons button:hover {
+  text-decoration: underline;
+}
+
+main footer {
+  background: none;
+  padding: 1.6rem;
+
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+
+  color: var(--black);
+  font-size: 2rem;
+}
+
+main footer hr {
+  border: none;
+  width: 80%;
+  height: 0.3rem;
+  background-color: #ddd;
+}
+
+main footer button {
+  background-color: var(--orange);
+  border-radius: 0.5rem;
+  width: 100%;
+  cursor: pointer;
+
+  color: var(--white);
+  font-weight: 700;
+
+  transition: filter 0.3s ease 0s;
+
+  display: flex;
+}
+
+main footer button a {
+  width: 100%;
+  line-height: 3.2rem;
+}
+
+main footer button:hover {
+  filter: brightness(1.15);
+}
+
+@media (min-width: 425px) {
+  main ul li .wrapper .imageContainer img {
+    width: 10rem;
+    height: 10rem;
+  }
+}
+
+@media (min-width: 768px) {
+  main {
+    width: 76.8rem;
+    margin: 7rem auto;
+    border-radius: 1rem;
+  }
+
+  main ul li .wrapper .wrapper1 {
+    justify-content: space-between;
+    gap: 0;
+  }
+
+  main ul li .wrapper .imageContainer img {
+    width: 12rem;
+    height: 12rem;
+  }
+
+  main ul,
+  main footer {
+    width: 50rem;
+  }
+}

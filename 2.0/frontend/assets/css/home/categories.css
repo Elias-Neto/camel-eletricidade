@@ -1,0 +1,50 @@
+main .categories {
+  background-color: var(--white);
+  width: 100%;
+  padding-block: 2.4rem;
+}
+
+main .categories .swiper-button-prev,
+main .categories .swiper-button-next {
+  color: var(--orange);
+}
+
+main .categories ul li a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+main .categories ul li a .imageContainer {
+  background-color: var(--gray);
+  border-radius: 50%;
+  width: 10rem;
+  height: 10rem;
+  padding: 6rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+main .categories ul li a .imageContainer img {
+  width: 8rem;
+  height: 8rem;
+}
+
+main .categories ul li a span {
+  color: var(--black);
+  font-weight: 700;
+  text-align: center;
+
+  height: 4rem;
+}
+
+@media (min-width: 1024px) {
+  main .categories {
+    width: 75%;
+    padding: 2.4rem;
+    border-radius: 1rem;
+  }
+}

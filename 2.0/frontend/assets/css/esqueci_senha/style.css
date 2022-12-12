@@ -1,0 +1,111 @@
+@import url(../layout/global.css);
+
+body {
+  background-color: var(--gray);
+  color: var(--white);
+}
+
+.App {
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+main {
+  border-radius: 1rem;
+
+  animation: fromRightToLeft 0.8s;
+}
+
+main form {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+
+main form .inputWrapper {
+  background-color: var(--input-bg);
+  padding: 1.6rem;
+  border-radius: 0.5rem;
+
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+main form .inputWrapper input {
+  background: none;
+  border: none;
+  outline: none;
+
+  color: var(--white);
+  font-size: 1.6rem;
+
+  width: 100%;
+}
+
+main .inputWrapper input::placeholder {
+  color: var(--input-description);
+  font-size: 1.6rem;
+}
+
+main form {
+  display: flex;
+
+  transition: filter 0.3s ease 0s;
+}
+
+main form button {
+  background-color: var(--orange);
+  padding-block: 1.4rem;
+  border-radius: 0.5rem;
+  width: 100%;
+
+  color: var(--white);
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1.6rem;
+}
+
+main form button:hover {
+  filter: brightness(1.15);
+}
+
+main .toBack {
+  color: var(--input-description);
+  font-size: 1.4rem;
+}
+
+main .toBack:hover {
+  text-decoration: underline;
+}
+
+@keyframes fromRightToLeft {
+  from {
+    opacity: 0;
+    transform: translateX(10rem);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@media (min-width: 1024px) {
+  body {
+    background-color: var(--body-bg);
+  }
+
+  main {
+    background-color: var(--gray);
+    border-radius: 1rem;
+    padding: 3rem 6rem;
+  }
+}

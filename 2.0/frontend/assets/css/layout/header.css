@@ -1,0 +1,305 @@
+header .desktop,
+header .closeMenu {
+  display: none;
+}
+
+header .top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header .top .user {
+  position: relative;
+}
+
+header .top .user summary {
+  list-style: none;
+  cursor: pointer;
+}
+
+header .top .user .userMenu::before {
+  content: "";
+  display: block;
+
+  position: absolute;
+  top: -1rem;
+  right: 0;
+
+  border-left: 25px solid transparent;
+  border-right: 25px solid transparent;
+  border-bottom: 25px solid var(--gray);
+}
+
+header .top .user .userMenu {
+  position: absolute;
+  top: 13rem;
+  right: 1rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+
+  background-color: var(--gray);
+  width: 20rem;
+  padding-block: 3rem;
+  border-radius: 1rem;
+  box-shadow: 0 8px 10px -5px rgb(0 0 0 / 20%), 0 16px 24px 2px rgb(0 0 0 / 14%),
+    0 6px 30px 5px rgb(0 0 0 / 12%);
+
+  z-index: 998;
+}
+
+header .top .user .userMenu ul {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+header .top .user .userMenu ul li {
+  padding-inline: 2rem;
+
+  transition: opacity 0.3s ease 0s;
+}
+
+header .top .user .userMenu ul li:hover {
+  opacity: 0.8;
+}
+
+header .top .user .userMenu ul li a {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+header .top .user .userMenu button {
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
+  text-align: center;
+  font-weight: 700;
+
+  height: 3rem;
+  padding-inline: 2rem;
+
+  display: flex;
+}
+
+header .top .user .userMenu button a {
+  width: 100%;
+  background-color: var(--orange);
+  border-radius: 0.5rem;
+
+  line-height: 3rem;
+
+  transition: filter 0.3s ease 0s;
+}
+
+header .top .user .userMenu button a:hover {
+  filter: brightness(1.15);
+}
+
+header .searchBar {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+
+  width: 100%;
+  background-color: #fff;
+  padding: 0.6rem 1.2rem;
+  border-radius: 0.2rem;
+}
+
+header .searchBar input {
+  background: none;
+  border: none;
+  outline: none;
+  width: 100%;
+}
+
+header .mobile {
+  height: 15rem;
+  width: 100%;
+  padding: 1.6rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+  background-color: var(--gray);
+}
+
+header .mobile .top .logo {
+  width: 8rem;
+}
+
+header .drawer {
+  position: fixed;
+  left: -100%;
+
+  height: calc(100vh - 15rem);
+  width: 100%;
+  background-color: var(--orange);
+  /* box-shadow: 0 8px 10px -5px rgb(0 0 0 / 20%), 0 16px 24px 2px rgb(0 0 0 / 14%),
+    0 6px 30px 5px rgb(0 0 0 / 12%); */
+
+  z-index: 999;
+  transition: 0.5s;
+  overflow-y: auto;
+}
+
+header .drawer .categories {
+  padding-block: 2.5rem;
+}
+
+header .drawer ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5rem;
+}
+
+header .drawer ul li {
+  color: var(--white);
+  font-size: 2.4rem;
+  font-weight: 700;
+}
+
+header .drawer.show {
+  left: 0;
+}
+
+@media (min-width: 1024px) {
+  header .mobile {
+    display: none;
+  }
+
+  header .desktop {
+    display: inherit;
+  }
+
+  header .desktop .top {
+    background-color: var(--gray);
+    padding: 3rem 1.6rem;
+
+    justify-content: center;
+    gap: 10rem;
+  }
+
+  header .desktop .bottom {
+    background-color: var(--orange);
+    padding: 0.5rem 1.6rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10rem;
+  }
+
+  header .desktop .top .logo {
+    width: 10rem;
+  }
+
+  header .desktop .top .searchBar {
+    width: 60%;
+    padding: 0.6rem 1.2rem;
+  }
+
+  header .desktop .top .user summary img {
+    width: 4rem;
+  }
+
+  header .top .user .userMenu {
+    top: 10rem;
+    right: 0rem;
+  }
+
+  header .desktop .bottom button {
+    color: var(--white);
+    font-weight: 700;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    padding-right: 1.6rem;
+    border: 0.2rem solid transparent;
+    border-radius: 1rem;
+    cursor: pointer;
+  }
+
+  header .desktop .bottom .closeMenu {
+    display: none;
+  }
+
+  header .desktop .bottom ul {
+    display: flex;
+    gap: 2rem;
+  }
+
+  header .desktop .bottom ul li {
+    padding: 0.6rem;
+    border: 0.2rem solid transparent;
+    border-radius: 1rem;
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+
+    text-align: center;
+  }
+
+  header .desktop .bottom ul li:hover,
+  header .desktop .bottom button:hover {
+    border: 0.2rem solid #fff;
+  }
+
+  header .drawer {
+    background: none;
+    width: fit-content;
+    height: 100vh;
+
+    top: 0;
+
+    display: flex;
+    gap: 1rem;
+  }
+
+  header .drawer .categories {
+    background-color: var(--orange);
+    width: 50rem;
+
+    overflow-y: auto;
+  }
+
+  header .drawer .categories ul {
+    margin-block: 1rem;
+  }
+
+  header .drawer .closeMenu {
+    display: inherit;
+  }
+
+  .overlay {
+    position: fixed;
+    z-index: 998;
+    opacity: 0;
+    transition: 1s;
+
+    background-color: hsla(0, 0%, 0%, 0.6);
+  }
+
+  .overlay.show {
+    height: 100vh;
+
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    opacity: 1;
+  }
+}

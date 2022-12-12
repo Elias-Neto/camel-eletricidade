@@ -1,0 +1,248 @@
+/*===== GERAL ==================================*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+
+  --bg-primary-color: hsl(180, 8%, 92%);
+  --gray-color: hsl(229, 19%, 22%);
+  --white-color: hsl(0, 0%, 95%);
+  --orange-color: hsl(39, 96%, 48%);
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: 'Inter', sans-serif;
+
+  overflow: hidden;
+  background-color: var(--bg-primary-color);
+}
+
+button {
+  background: none;
+  border: none;
+}
+
+ul {
+  list-style: none;
+}
+
+/*===== HEADER OF PAGE ==================================*/
+nav.desktop, body.menu-expanded nav.desktop {
+  display: none;
+}
+
+nav.mobile {
+  height: 13rem;
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+
+  background-color: var(--gray-color);
+}
+
+nav .top {
+  padding-block: 1rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+nav .top .logo {
+  width: 8rem;
+}
+
+nav .top .shopping-cart {
+  width: 3.5rem;
+}
+
+nav .search {
+  margin-inline: auto;
+
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 80%;
+}
+
+nav .search span {
+  position: absolute;
+  display: flex;
+  left: 1rem;
+}
+
+nav .search input {
+  width: 100%;
+  padding: 0.6rem 5rem;
+}
+
+/*===== MENU EXPANDED ==================================*/
+body.menu-expanded > :not(.mobile) {
+  display: none;
+}
+
+
+.close-menu,
+body.menu-expanded .open-menu,
+.menu {
+  display: none;
+}
+
+body.menu-expanded .menu {
+  display: inherit;
+}
+
+body.menu-expanded .close-menu {
+  display: inline;
+}
+
+.menu {
+  transform: translateY(100%);
+}
+
+body.menu-expanded .menu {
+  top: 0;
+  left: 0;
+  background: var(--orange-color);
+
+  transition: transform 300ms;
+  transform: translateY(0);
+}
+
+.menu ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5rem;
+
+  padding-block: 5rem;
+
+  font-weight: 700;
+  font-size: 2.5rem;
+  line-height: 3rem;
+}
+
+.menu ul li a {
+  color: var(--white-color);
+  text-decoration: none;
+}
+
+/*===== RESPONSIVIDADE ==================================*/
+@media (min-width: 1024px) {
+  /*===== NAVIGATION ==================================*/
+  nav.mobile, body.menu-expanded nav.mobile {
+    display: none;
+  }
+
+  nav.desktop, body.menu-expanded nav.desktop {
+    display: block;
+    height: 0;
+  }
+
+  nav .top {
+    padding: 2.5rem 3rem;
+    height: 11rem;
+
+    background-color: var(--gray-color);
+  }
+
+  nav .top .logo {
+    width: 10rem;
+  }
+
+  nav .top .shopping-cart {
+    width: 4.5rem;
+  }
+
+  nav .search {
+    width: 60%;
+  }
+
+  nav .down {
+    background-color: var(--orange-color);
+
+    padding: 1.6rem;
+  }
+
+  nav .down ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5rem;
+  }
+
+  nav .down a,
+  li.all {
+    text-decoration: none;
+    color: var(--white-color);
+    font-weight: 800;
+    font-size: 2rem;
+    line-height: 2.4rem;
+  }
+
+  nav .down li.all {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.2rem;
+
+    cursor: pointer;
+  }
+
+  nav .down li.all button {
+    cursor: pointer;
+  }
+
+  nav .down li.emphasis_categories {
+    display: flex;
+    gap: 5rem;
+
+    margin: auto;
+  }
+
+  /*===== MENU EXPANDED ==================================*/
+  body.menu-expanded {
+    overflow-y: hidden;
+  }
+
+  body.menu-expanded > :not(.desktop) {
+    display: inherit;
+
+    opacity: 0.5;
+    z-index: -1;
+  }
+
+  body.menu-expanded .menu {
+    display: inherit;
+    position: absolute;
+
+    padding-inline: 20rem;
+    max-width: fit-content;
+    height: 70rem;
+
+    opacity: 1;
+    z-index: 1;
+
+    overflow-y: scroll;
+  }
+
+  .menu {
+    transform: translateX(-100%);
+    max-width: 30%;
+    margin-top: 18.5rem;
+  }
+
+  body.menu-expanded .menu {
+    transform: translateX(0);
+  }
+}

@@ -1,0 +1,94 @@
+main .emphasisProducts {
+  background-color: var(--white);
+  width: 100%;
+  padding-block: 2.4rem;
+
+  text-align: center;
+}
+
+main .emphasisProducts h2 {
+  font-size: 1.8rem;
+  margin-bottom: 2.4rem;
+}
+
+main .emphasisProducts ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 2.4rem;
+}
+
+main .emphasisProducts ul li.joker {
+  display: none;
+}
+
+main .emphasisProducts ul li a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+main .emphasisProducts ul li a .imageContainer {
+  background-color: var(--gray);
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+
+main .emphasisProducts ul li a .imageContainer img {
+  width: 8rem;
+  height: 8rem;
+}
+
+main .emphasisProducts ul li a span {
+  color: var(--black);
+}
+
+main .emphasisProducts ul li a .productName {
+  font-size: 1.4rem;
+  width: 10rem;
+}
+
+main .emphasisProducts ul li a .price {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  font-weight: 600;
+}
+
+main .emphasisProducts ul li a .price .productPrice {
+  text-decoration: line-through;
+}
+
+main .emphasisProducts ul li a .price .promotionProductPrice {
+  color: var(--orange);
+}
+
+@media (max-width: 425px) {
+  main .emphasisProducts ul li.r768 {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  main .emphasisProducts ul {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media (min-width: 1024px) {
+  main .emphasisProducts {
+    width: 75%;
+    padding: 2.4rem;
+    border-radius: 1rem;
+  }
+}
+
+@media (min-width: 1440px) {
+  main .emphasisProducts ul {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  }
+
+  main .emphasisProducts ul li.joker {
+    display: inherit;
+  }
+}
