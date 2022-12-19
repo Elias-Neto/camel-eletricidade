@@ -15,7 +15,7 @@ Em cada período avançamos no desenvolvimento do projeto, portanto, cada versã
 
 - **🛠 Tecnolocgias Usadas**: HTML, CSS, JavaScript, Figma.
 
-- **👉 Detalhes:** [clique aqui ](./1.0/)
+- **👉 Detalhes:** [Clique Aqui ](./1.0/)
 
 ## 📌 Versão 2.0
 
@@ -23,7 +23,12 @@ Em cada período avançamos no desenvolvimento do projeto, portanto, cada versã
 
 - **🛠 Tecnolocgias Usadas**: PostgresSQL, HTML, CSS, JavaScript, Figma..
 
-- **👉 Detalhes:** [clique aqui ](./2.0/)
+- **👉 Detalhes:** [Clique Aqui ](./2.0/)
+
+<br>
+<br>
+
+**👉 Mais informações sobre minha graduação:** [Clique Aqui](https://github.com/Elias-Neto/Analise-e-Desenvolvimento-de-Sistemas)
 
 <br>
 <br>
