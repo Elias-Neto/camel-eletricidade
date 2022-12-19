@@ -5,7 +5,7 @@
 SELECT 
 	nome 
 FROM 
-	categoria
+	cliente
 ORDER BY 
 	nome 
 ASC
