@@ -28,7 +28,7 @@ Em cada período avançamos no desenvolvimento do projeto, portanto, cada versã
 <br>
 <br>
 
-**👉 Mais informações sobre minha graduação:** [Clique Aqui](https://github.com/Elias-Neto/Analise-e-Desenvolvimento-de-Sistemas)
+**Mais informações sobre minha graduação:** [Clique Aqui](https://github.com/Elias-Neto/Analise-e-Desenvolvimento-de-Sistemas)
 
 <br>
 <br>
