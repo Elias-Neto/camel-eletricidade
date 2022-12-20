@@ -22,6 +22,7 @@
 - [CSS](https://www.w3schools.com/css/default.asp)
 - [JavaScript](https://www.w3schools.com/js/)
 - [Figma](https://www.figma.com/design/)
+- [PostgreSQL](https://postgresqltutorial.com/)
 
 <br>
 <br>
